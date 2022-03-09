@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="「京プラザ」のお問い合わせページです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ :: 京プラザ</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body id="contact">
+<div id="wrapper">
+    <header>
+        <div class="headerLink">
+            <h1><a href="../index.html"><img src="../images/header_logo.png" alt="京プラザlogo"></a></h1>
+            <!-- ハンバーガー -->            
+            <input id="hcheck" type="checkbox">
+            <label for="hcheck" id="hopen"><span>メニューボタン</span></label>
+            <label for="hcheck" id="back"></label>
+            <!-- ナビゲーション -->
+            <nav>
+                <div class="slideMenu">
+                <ul class="menu">                    <li class="home"><a href="../index.html">HOME</a></li>
+                    <li class="nav1"><a href="../about/index.html"><img src="../images/nav1.png" alt="京プラザとは" width="127px" height="110px"><span>京プラザとは</span></a></li>
+                    <li class="nav2"><a href="../news/index.html"><img src="../images/nav2.png" alt="お知らせ"><span>お知らせ</span></a></li>
+                    <li class="nav3"><a href="../products/index.html"><img src="../images/nav3.png" alt="商品紹介"><span>商品紹介</span></a></li>
+                    <li class="nav4"><a href="../tour/index.html"><img src="../images/nav4.png" alt="観光情報"><span>観光情報</span></a></li>
+                    <li class="nav5"><a href="../contact/index.html"><img src="../images/nav5.png" alt="お問合せ"><span>お問い合せ</span></a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+    <h2>お問い合わせ</h2>
+            <div class="contactMain">
+            <p>あらかじめお読みください。</p>
+
+                    
+                <ul>
+                    <li>お問い合わせの内容、休業日等により、回答に時間がかかる場合もございますのでご了承ください。</li>
+                    <li>内容によりましては回答できかねる場合もございますのでご了承ください。</li>
+                    <li>環境設定の違いにより返信ができない場合がございます。その場合Eメール以外の方法で連絡させていただくこともございます。差し支えなければ電話番号のご入力をお願いいたします。</li>
+                    <li>お客さまからお寄せいただきましたご意見、ご質問などは、「京プラザ」を運営する株式会社京物産とお客さまとのコミュニケーションのために活用させていただくもので、それ以外の目的で使用することはございません。ご登録いただいた個人情報は、SSL暗号化通信により、保護しております。</li>
+                </ul> 
+                <form action="" method="post">
+                    <div class="contactForm">
+                    <dl>
+                        <div class="formItem">
+                            <dt>お名前</dt>
+                            <dd><input type="text" name="your_name" value="" placeholder="" class="txtInput"></dd>
+                        </div>
+                                
+                        <div class="formItem">
+                            <dt>フリガナ</dt>
+                            <dd><input type="text" name="your_name" value="" placeholder="" class="txtInput"></dd>
+                        </div>
+
+                        <div class="formItem">
+                            <dt class="tel">電話番号</dt>
+                            <dd><input type="text" name="your_name" value="" placeholder="" class="txtInput"></dd>
+                        </div>
+
+                        <div class="formItem">
+                            <dt>メールアドレス</dt>
+                            <dd><input type="text" name="your_name" value="" placeholder="" class="txtInput"></dd>
+                        </div> 
+
+                        <div class="formItem">
+                        <dt>お問い合わせ内容<br>
+                            （1000文字以内）</dt>
+                        <dd><textarea name="message"></textarea></dd>
+                        </div>
+                    </div>
+                    </dl>
+                        <div class="messageContact">
+                            <p><span>下記【個人情報の取り扱いにあたって】に同意のうえ、確認画面へお進みください。</span></p>
+                            <p>【個人情報の取り扱いにあたって】</p>
+                            <p>ご入力いただいた情報は、お問い合わせに関するご連絡のために活用させていただき、<br>
+                            それ以外の目的で使用することはありません。</p>
+                            <p>また、当サイトはSSL暗号化通信により、お客さまの情報を保護しております。</p>
+                            
+                        </div>
+
+                        <div class="checkbox">
+                            <label for="check">
+                                <input
+                                  type="checkbox"
+                                  id="contactCheck"
+                                  onclick="changeDisabled();"
+                                />
+                                <span>【個人情報の取り扱いにあたって】に同意しました</span>
+                              </label>
+                              <input
+                                id="contactBtn"
+                                class="contactButton"
+                                type="submit"
+                                name="submit"
+                                value="送信"/>
+                            </div>  
+                              
+                              
+                           
+
+
+
+
+
+                </form>
+            </div>
+    </main>    
+    
+	<hr>
+
+	<footer>
+		<div class="footerMain">
+			<div class="footerMainWrap">
+				<div class="footerGmap">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.552488653099!2d139.70528772514203!3d35.71226756526187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3c1b479ce3%3A0xfc97fdfc32ee4dd0!2z44CSMTY5LTAwNzUg5p2x5Lqs6YO95paw5a6_5Yy66auY55Sw6aas5aC077yS5LiB55uu77yR77yU4oiS77ySIOaWsOmZveODk-ODqyAx6ZqO!5e0!3m2!1sja!2sjp!4v1643249655974!5m2!1sja!2sjp"
+						width="100%"
+						height="100%"
+						style="border:0;"
+						allowfullscreen=""
+						loading="lazy">
+					</iframe>
+				</div>
+				<div class="footerAccess">
+					<ul>
+						<li><img src="../images/footer_logo.png" alt="京ロゴ"></li>
+						<li>
+							<p>〒169-0075<br>
+							東京都新宿区高田馬場2-14-2　新陽ビル1階</p>
+							<p>TEL / FAX	03-3205-9222 / 03-3205-9220</p>
+							<p>営業時間</p>
+							<p>平日　10：30～20：00</p>
+							<p>土日祝日　11：00～18：00</p>
+							<p>休館日　年末年始</p>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div class="footerFooter">
+			<ul>
+                <li class="homeFooter"><a href="../index.html">HOME</a></li>
+                <li class="nav1"><a href="../about/index.html">京プラザとは</a></li>
+                <li class="nav2"><a href="../news/index.html">お知らせ</a></li>
+                <li class="nav3"><a href="../products/index.html">商品紹介</a></li>
+                <li class="nav4"><a href="../tour/index.html">観光情報</a></li>
+                <li class="nav5"><a href="../contact/index.html">お問い合わせ</a></li>
+			</ul>
+			<p><small>&copy; MIYAKO PLAZA. All right reserved</small></p>
+		</div>
+	</footer>
+    <a id="move-page-top" class="move-page-top" href="#wrapper"><img src="../images/top_link_button.png" alt="上へ"></a>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+	<script src="../js/top_script.js"></script>
+    <script src="../js/contact_script.js"></script>
+</body>
+</html>
