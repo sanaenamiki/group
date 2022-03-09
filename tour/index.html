@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="「京プラザ」の観光情報ページです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>観光情報 :: 京プラザ</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/tour.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body id="tour">
+<div id="wrapper">
+    <header>
+        <div class="headerLink">
+            <h1><a href="../index.html"><img src="../images/header_logo.png" alt="京プラザlogo"></a></h1>
+            <!-- ハンバーガー -->            
+            <input id="hcheck" type="checkbox">
+            <label for="hcheck" id="hopen"><span>メニューボタン</span></label>
+            <label for="hcheck" id="back"></label>
+            <!-- ナビゲーション -->
+            <nav>
+                <div class="slideMenu">
+                <ul class="menu">
+                    <li class="home"><a href="../index.html">HOME</a></li>
+                    <li class="nav1"><a href="../about/index.html"><img src="../images/nav1.png" alt="京プラザとは" width="127px" height="110px"><span>京プラザとは</span></a></li>
+                    <li class="nav2"><a href="../news/index.html"><img src="../images/nav2.png" alt="お知らせ"><span>お知らせ</span></a></li>
+                    <li class="nav3"><a href="../products/index.html"><img src="../images/nav3.png" alt="商品紹介"><span>商品紹介</span></a></li>
+                    <li class="nav4"><a href="../tour/index.html"><img src="../images/nav4.png" alt="観光情報"><span>観光情報</span></a></li>
+                    <li class="nav5"><a href="../contact/index.html"><img src="../images/nav5.png" alt="お問合せ"><span>お問い合せ</span></a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h2>観光情報</h2>
+        <p class="opening">観光をご検討の皆さまをサポートします。
+            京プラザの「観光情報コーナー」では、京都お馴染みの観光地から、あちこちで開催される行事やイベント、ご当地グルメや宿泊施設など、旅行プランに合わせて情報をご案内します。
+            お気軽におたずねください。
+        </p>
+        <div id="tourWrap">
+            <div>
+                <P class="category know">知る・学ぶ</P>
+                <dl>
+                    <dt><img src="../images/tour/tour1.jpg" alt="世界遺産二条城"><br><p class="eventName">世界遺産 二条城をめぐるガイドツアー</p></dt>
+                    <dd><p>京都が誇る世界遺産、徳川幕府265年の栄光と終焉の地である二条城について、その歴史的、文化的、芸術的価値をガイドがわかりやすく解説しながらご案内します。<br>
+                        ツアー参加者は、通常非公開のエリアも観覧いただけます。（中庭などを予定）休城日、二の丸御殿の休殿日を除き、ツアーは毎日利用できます。</p>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <P class="category watch">観る</P>
+                <dl>
+                    <dt><img src="../images/tour/tour2.jpg" alt=""><br><p class="eventName">京都国立博物館 新春特集展示 寅づくし─干支を愛でる─</p></dt>
+                    <dd><p>2022年の干支、寅（虎）がテーマの特集展示です。可愛い虎、強そうな虎、リアルな虎など、博物館に生息するいろいろな虎が大集合！ぜひ会場でお気に入りを見つけてください。<br>
+                        子どもから大人まで、幅広い層に楽しんでいただきたい展示です。</p>
+                        <p class="date">開催期間：2022年1月2日～ 2月13日</p>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <P class="category experience">体験する</P>
+                <dl>
+                    <dt><img src="../images/tour/tour3.jpg" alt=""><br><p class="eventName">井筒八ッ橋本舗 八ッ橋の手焼き体験</p></dt>
+                    <dd><p>焼き子さんの衣裳に着替え、昔ながらの手法で八ッ橋を焼いて頂き、お好きなデザインのラベルを貼った缶に入れて、旅の思い出としてお持ち帰りいただけます。<br>
+                        200年の歴史をもつ井筒八ッ橋を手作りで、大切な方へのお土産にいかがでしょうか。</p>
+                        <p class="date">体験時間 11：00～16：00（最終受付15時）<br>
+                        定休日	火曜・水曜</p>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <P class="category experience">体験する</P>
+                <dl>
+                    <dt><img src="../images/tour/tour4.jpg" alt=""><br><p class="eventName">開門前の東福寺本坊庭園を眺めて朝坐禅</p></dt>
+                    <dd><p>京都を代表する禅寺のひとつとして知られる東福寺。<br>
+                        普段は禅堂で行う坐禅を今回は特別に本坊（方丈）庭園を眺めながら体験いただきます。<br>
+                        坐禅の体験が終了したあとは、本坊庭園エリアを拝観いただけます。</p>
+                        <p class="date">開催期間：2022年1月16日〜 2022年2月16日</p>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <P class="category watch">観る</P>
+                <dl>
+                    <dt><img src="../images/tour/tour5.jpg" alt=""><br><p class="eventName">冬の特別公開 旧三井家下鴨別邸＜主屋２階・３階望楼＞</p></dt>
+                    <dd><p>大正14年に完成した、下鴨神社の南に位置する豪商・三井家の旧別邸。<br>
+                        今冬は、通常公開されている玄関棟および主屋1階・庭園に加え、通常非公開の主屋2階および3階望楼を特別公開します。当時の富裕層気分で東山の眺望をお楽しみ下さい。</p>
+                        <p class="date">開催期間：2022年1月10日～ 2022年3月10日</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+	<hr>
+	<footer>
+		<div class="footerMain">
+			<div class="footerMainWrap">
+				<div class="footerGmap">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.552488653099!2d139.70528772514203!3d35.71226756526187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3c1b479ce3%3A0xfc97fdfc32ee4dd0!2z44CSMTY5LTAwNzUg5p2x5Lqs6YO95paw5a6_5Yy66auY55Sw6aas5aC077yS5LiB55uu77yR77yU4oiS77ySIOaWsOmZveODk-ODqyAx6ZqO!5e0!3m2!1sja!2sjp!4v1643249655974!5m2!1sja!2sjp"
+						width="100%"
+						height="100%"
+						style="border:0;"
+						allowfullscreen=""
+						loading="lazy">
+					</iframe>
+				</div>
+				<div class="footerAccess">
+					<ul>
+						<li><img src="../images/footer_logo.png" alt="京ロゴ"></li>
+						<li>
+							<p>〒169-0075<br>
+							東京都新宿区高田馬場2-14-2　新陽ビル1階</p>
+							<p>TEL / FAX	03-3205-9222 / 03-3205-9220</p>
+							<p>営業時間</p>
+							<p>平日　10：30～20：00</p>
+							<p>土日祝日　11：00～18：00</p>
+							<p>休館日　年末年始</p>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div class="footerFooter">
+			<ul>
+                <li class="homeFooter"><a href="../index.html">HOME</a></li>
+                <li class="nav1"><a href="../about/index.html">京プラザとは</a></li>
+                <li class="nav2"><a href="../news/index.html">お知らせ</a></li>
+                <li class="nav3"><a href="../products/index.html">商品紹介</a></li>
+                <li class="nav4"><a href="../tour/index.html">観光情報</a></li>
+                <li class="nav5"><a href="../contact/index.html">お問い合わせ</a></li>
+			</ul>
+			<p><small>&copy; MIYAKO PLAZA. All right reserved</small></p>
+		</div>
+		</footer>
+    </div> 
+    <a id="move-page-top" class="move-page-top" href="#wrapper"><img src="../images/top_link_button.png" alt="上へ"></a>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+	<script src="../js/top_script.js"></script>
+</body>
+</html>
