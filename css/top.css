@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+
+html{
+	overflow-y: scroll;
+	/*background: #e6e6fa;*/
+	
+}
+/*img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+} /*これでほぼ画像のレスポンシブは対応*/
+#wrapper{
+	width: 100%;
+	max-width: 1000px;
+	min-width:320px;
+	margin: 0 auto;
+}
+
+/* メインビジュアル-------------------------------------- */
+
+.slideBox {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50.2%;
+}
+
+.slideMainSp {
+    display: none;
+}
+.pcMainImg {
+    position: relative;
+}
+
+.slideMain li {
+    position: absolute;
+    width: 100%;
+}
+
+.button ul {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 93.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button ul li a {
+    text-indent: -9999px;
+    text-decoration: none;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: #fff;
+    margin: 12px;
+}
+
+.button ul li a.target{
+	background: #999;
+}
+
+/* ポエム---------------------------------------------- */
+
+#poemSp {
+    display: none;
+}
+
+#poem {
+    padding-top: 3.5%;
+	padding-bottom: 4%;
+    /* width: 51%; */
+    text-align: center;
+}
+
+#poemWrap {
+	position: relative;
+	width: 100%;
+}
+
+#poem:before {
+	content: "";
+	width: 114px;
+	height: 221px;
+	display: inline-block;
+	background-image: url(../images/h2_illust_01.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	left: 6.5%;
+	top: 33%;
+}
+
+#poem:after {
+	content: "";
+	width: 146px;
+	height: 216px;
+	display: inline-block;
+	background-image: url(../images/h2_illust_02.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	right: 4.5%;
+	top: 33%;
+}
+
+
+#poem p {
+    font-family: 'Shippori Mincho', serif;
+    padding: auto 10%;
+    overflow: hidden;
+	text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.poemHead {
+    font-size: 2.19rem;
+    padding-bottom: 1rem;
+	color: #C9171E;
+}
+.poemOthers {
+    font-size: 1.25rem;
+    padding-bottom: 0.1em;
+	letter-spacing: 0.1em;
+}
+.poemOthersEnd {
+    font-size: 1.25rem;
+}
+
+
+/* ポエム　jQuery用------------------------------------------ */
+.slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+.slide-in_inner {
+    display: inline-block;
+  }
+  /* .downAnime{
+    opacity: 0.9;事前に透過0 にして消しておく
+} */
+.slideAnimeDownUp {
+    animation-name:slideTextY100;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);/* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeUpDown {
+    animation-name:slideTextY-100;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+        transform: translateY(-100%);/* 要素を下の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+/* メイン---------------------------------------------- */
+
+/*main section{
+	margin: 0 auto;
+}*/
+.info .heading{
+	text-align: center;
+    margin: 1% 0;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    color: #000;
+    font-size: 1.875rem;
+}
+/*一月のおすすめ*/
+.pickUp{
+	display: flex;
+    max-width:  calc(100% - 0.6%);/*サイド30pxの隙間をとった為。要するに940px*/
+	justify-content: space-between;
+	margin-bottom: 5%;
+}
+.pickUp p{
+	text-align: center;
+	line-height: 1.8;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.pickUp1{
+	width: calc(50% - 4%);
+}
+
+.pickUp1 dt img{
+	border-radius: 10px;
+	max-width: 100%;
+}
+.pickUp1 dd{
+	line-height: 1.5; 
+}
+/*一月のおすすめ終了*/
+
+/*お知らせ*/
+.info {
+    margin: auto;
+    padding: 5% 5% 2.4%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.info dl{
+	padding: 0 7%;
+}
+.info dt{
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	color: #c9171e;
+}
+.info dd{
+	font-size: 1.25rem;
+	line-height: 1.5;
+	margin-bottom: 3%;
+	border-bottom: 1px dotted #c9171e;
+}
+.info p{
+	text-align: right;
+	margin: 1% 0 0 1%;
+	padding: 4.9% 7.2% 0 0;
+} 
+.info .news a{
+    position: relative;
+    padding-left: 16px;
+	color: #c9171e;
+	text-decoration: none;
+}
+
+.info .news a::before{
+    content: '\025b6';
+}   
+
+.info .news a:hover{
+	text-decoration: underline;
+	color: #c9171e;
+} 
+/*お知らせ終了*/
+
+/*お取り扱い終了*/
+.products{
+	margin: 0 auto 8%;
+	text-align: center;
+}
+.products ul li img{
+	border-radius: 10px;
+}
+.products .message{
+	line-height: 2;
+	/*font-family: "游明朝",serif;*/
+	display: inline-block;
+	text-align: left;
+	margin: 5% 2% 6%;
+	font-size: 1.25rem;
+}
+.products .button{
+	margin: 3.5% auto;
+	text-align: center;
+}
+
+/*お取り扱い終了*/
+
+/*productsとtourismのボタン*/
+
+.Button a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.375rem;
+	background: #c9171e;
+	padding: 2%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.Button a:hover {
+	opacity: 0.5;
+}
+
+/*観光案内*/
+.tourism{
+	text-align: center;
+}
+.tourism h2{
+	/*margin-top: 9%;*/
+	text-align: center;
+}
+
+.message{
+	margin-top: 5%;
+	margin-bottom: 6%;
+}
+
+.tourism .message{
+	text-align: left;
+	display: inline-block;
+	line-height: 1.5;
+}
+
+.tourism .tourButton{
+	margin: 10% 0;
+}
+
+/*観光案内終了*/
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+
+.itemSlider {
+	overflow: hidden;
+}
+
+.itemSlider ul {
+	display: flex;
+	width: 100%;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 3%;/*スライド左右の余白調整*/
+}
+.slick-initialized .slick-slide {
+	margin: 0 5px;
+}
+/*========= レイアウトのためのCSS ===============*/
+.products .slider{
+	margin:0;
+	padding: 0;
+}
+
+
+/* レスポンシブ開始------------------------------------------- */
+
+@media screen and (max-width:599px) {
+	/* SPメインビジュアル-------------------- */
+	.slideMain,
+	.button {
+		display: none;
+	}
+	.slideMainSp {
+		display: block;
+	}
+	.spMainImg ul li img {
+		width: 100%;
+		height: auto;
+	}
+	.slideMainSp ul li img {
+	   width: 100%;
+	   height: auto;
+   }
+   .slideMainSp ul {
+	   position: relative;
+   }
+   
+   .slideMainSp li {
+	   position: absolute;
+	   width: 100%;
+   }
+   /* SP版ポエム------------------------------ */
+
+   #poem {
+	   display: none;
+   }
+
+   #poemSp {
+	display: inline-block;
+	padding: 70.3% 6.3% 4% 6.3% ;
+	text-align: center;
+	font-family: 'Shippori Mincho', serif;
+	text-align: justify;
+	font-weight: bold;
+	}
+
+	.poemHead {
+		font-size: 1.5rem;
+		padding-bottom: 0;
+	}
+
+	.poemOthers {
+	text-align: justify;
+	letter-spacing: 0.1em;
+	line-height: 1.8;
+	padding: 0;
+	font-size: 0.875rem;
+	}
+	.slideAnimeDownUp,
+	.slideAnimeUpDown {
+	animation-duration: 1s;
+	}
+
+	/* 1月おすすめ--------------------------- */
+	.pickUp {
+		display: initial;
+		max-width: initial;
+	}
+	.pickUp p{
+		text-align: left;
+		margin-top: 20px;
+		font-size: 1.125rem;
+	}
+	.pickUp1 dd{
+		line-height: 1.5;
+		font-size: 0.875rem;
+	}
+	.pickUp1 {
+		width: initial;
+		margin: 0 auto 36px;
+		padding: inherit;
+	}
+	.pickUp1 dt img {
+		width: 100%;
+	}
+
+	/*お知らせ*/
+
+	.info {
+		width: 100%;
+		padding: 5% 0;
+		box-shadow: none;
+	}
+	.info dt{
+	font-size: 1.125rem;	
+	}
+	.info dd{
+	font-size: 0.875rem;
+	}
+
+	/*お取り扱い*/
+
+	.products .message{
+	font-size: 0.9375rem;
+	}
+
+
+}

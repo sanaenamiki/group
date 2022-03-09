@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+html{
+	overflow-y: scroll;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+body {
+    letter-spacing: 0.05em;
+    font-feature-settings: "palt" 1;
+    line-height: 1.5;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#wrapper {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+}
+main:not(#home) {
+    padding: 0 3% 7% 3%;
+}
+/* ナビゲーション-------------------------------------- */
+
+header {
+    background: #fff;
+}
+
+h1 {
+    margin-left: 1.5%;
+}
+
+#hclose {
+    display: none;
+}
+.home {display: none;
+}
+
+
+nav li a {
+    display: block;
+    min-width: 12.7%;
+    height: auto;
+}
+nav li a span {
+    display: none;
+}
+
+#hcheck,
+#hopen,
+#hclose {
+    display: none;
+}
+
+.headerLink {
+    padding-top: 2.3%;
+    padding-bottom: 1.7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.menu li a:hover img {
+    visibility: hidden;
+}
+.menu .nav1:hover {
+    background: url(../images/nav_hover_01.png)no-repeat;
+    background-size: 100% auto;
+}
+.menu .nav2:hover {
+    background: url(../images/nav_hover_02.png)no-repeat;
+    background-size: 100% auto;
+}
+.menu .nav3:hover {
+    background: url(../images/nav_hover_03.png)no-repeat;
+    background-size: 100% auto;
+}
+.menu .nav4:hover {
+    background: url(../images/nav_hover_04.png)no-repeat;
+    background-size: 100% auto;
+}
+.menu .nav5:hover {
+    background: url(../images/nav_hover_05.png)no-repeat;
+    background-size: 100% auto;
+}
+
+/* カレント設定------- */
+
+#about nav .nav1 {
+    pointer-events: none;
+}
+#about nav .nav1 img {
+    visibility: hidden;
+}
+#about nav .nav1 {
+    background: url(../images/nav_current_01.png)no-repeat;
+    background-size: 100% auto;
+}
+
+#news nav .nav2 {
+    pointer-events: none;
+}
+#news nav .nav2 img {
+    visibility: hidden;
+}
+#news nav .nav2 {
+    background: url(../images/nav_current_02.png)no-repeat;
+    background-size: 100% auto;
+}
+
+#products nav .nav3 {
+    pointer-events: none;
+}
+#products nav .nav3 img {
+    visibility: hidden;
+}
+#products nav .nav3 {
+    background: url(../images/nav_current_03.png)no-repeat;
+    background-size: 100% auto;
+}
+
+#tour nav .nav4 {
+    pointer-events: none;
+}
+#tour nav .nav4 img {
+    visibility: hidden;
+}
+#tour nav .nav4 {
+    background: url(../images/nav_current_04.png)no-repeat;
+    background-size: 100% auto;
+}
+
+#contact nav .nav5 {
+    pointer-events: none;
+}
+#contact nav .nav5 img {
+    visibility: hidden;
+}
+#contact nav .nav5 {
+    background: url(../images/nav_current_05.png)no-repeat;
+    background-size: 100% auto;
+}
+
+/* 見出し二重線-------------------------------------------- *//* 追記箇所*/
+h2:not(.heading) {
+    display: flex;
+    align-items: center;/* 縦位置の調整 */
+    color: #c9171e;
+    margin: 4.5% 0 3.5%;
+    font-size: 1.875rem;/*30px相当
+    font-family: "游ゴシック";
+    letter-spacing: 0.4em;
+  /*    justify-content: center;*/
+  }
+  
+ h2::before,
+ h2::after {
+    content: '';
+    flex-grow: 1;/* 余白を分け与える */
+    height: 3px;
+    border-top: solid 3px #c9171e;
+    border-bottom: solid 3px #c9171e;
+    /*background: 3px #c9171e;*/
+  }
+  
+  /* 見出しの文字と横棒の間隔を開ける */
+  h2::before {
+    margin-right: 30px;
+  }
+  
+  h2::after {
+    margin-left: 30px;
+  }
+
+/* フッター-------------------------------------------- */
+.move-page-top {
+    position: fixed;
+    z-index: 1;
+    bottom: 1%;
+    right: 1%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.move-page-top img{
+    border-radius: 50%;
+}
+
+.move-page-top:hover {
+    cursor: pointer;
+}
+
+footer{
+	background: #c9171e;
+}
+/*白抜きの部分*/
+.footerMain{
+	background: #fff;
+	/*margin: 10% 0 auto;*/
+}
+.footerMainWrap {
+    margin: 0 3%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footerAccess{
+	width: 100%;
+}
+.footerAccess ul li img{
+    margin-right: 3%;
+    width: 90%;
+}
+.footerAccess ul{
+	font-size: 0.875rem;
+}
+.footerAccess ul li{
+	margin-bottom: 2%;
+}
+.footerAccess ul li p{
+	margin: 1% 0;
+}
+.footerGmap{
+	width: 100%;	
+}
+.footerGmap iframe{
+	border-radius: 10px;
+}
+/*白抜きの部分終了*/
+.footerFooter{
+	text-align: center;
+    font-size: 0.875rem;
+}
+
+.footerFooter ul{
+	display: inline-flex;
+	margin: 2% 0;
+    color: #fff;
+}
+.footerFooter ul li a{/*----------------------------追記箇所*/
+	text-decoration: none;
+    color: #fff;
+}
+
+.footerFooter ul li+li:before{
+	content: " | ";
+}
+
+.footerFooter ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footerFooter p{
+	line-height: 1.5;
+	padding-bottom: 2%;
+    color: #fff;
+}
+
+/*footerカレント設定*//*----------------------------追記箇所*/
+#home footer .homeFooter a,
+#about footer .nav1 a,
+#news footer .nav2 a,
+#products footer .nav3 a,
+#tour footer .nav4 a,
+#contact footer .nav5 a {
+    color: #ffa6bb;
+    pointer-events: none;
+}
+
+/* スマホ対応----------------------------------- */
+@media screen and (max-width:599px) {
+    
+    /* ナビゲーション----------------------- */
+    
+    header {
+        position: relative;
+        overflow: hidden;
+        transition: all 1s;
+    }  
+    /* 非表示 */
+    #hclose img {
+        display: none;
+    }
+    nav li a img {
+        display: none;
+    }
+    
+    #about nav .nav1,
+    #news nav .nav2,
+    #products nav .nav3,
+    #tour nav .nav4,
+    #contact nav .nav5 {
+        background: none;
+    }
+
+
+    /* noneを表示 */
+    #hcheck,
+    #hclose,
+    #hopen,
+    .home,
+    .menu li span {
+        display: block;
+    }
+    
+    .headerLink {
+        background-color: #fff;
+        display: block;
+        padding-top: 4.3%;
+        padding-bottom: 4.6%;
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        padding: 0 0 0 3.5% ;
+        margin-left: 0;
+    }
+
+    h1 img {
+        width: 39vw;
+        height: auto;
+    }    
+    h2  {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -100vw;
+        background: #fff;
+        width: 75.9%;
+        padding: 30% 0;
+        min-height: 100vh;
+        z-index: 3;
+        transition: all 0.3s;
+    }
+
+    #hcheck {
+        position: absolute;
+        left: -50vw;
+    }
+
+    .slideMenu {
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .menu li {
+        text-align: left;
+        padding: 10% 0;
+    }
+    .menu li a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5.4% 0;
+        padding-left: 40px;
+    }
+
+    .menu li a:hover {
+        text-decoration: underline;
+        opacity: 0.5;
+    }
+
+    .menu .home a {
+        background: url(../images/sp_nav1.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+
+    .menu .nav1 a {
+        background: url(../images/sp_nav2.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+    .menu .nav2 a {
+        background: url(../images/sp_nav3.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+    .menu .nav3 a {
+        background: url(../images/sp_nav4.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+    .menu .nav4 a {
+        background: url(../images/sp_nav5.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+    .menu .nav5 a {
+        background: url(../images/sp_nav6.png)no-repeat left 30%;
+        background-size: 30px auto;
+    }
+    .menu [class^="nav"]:hover {
+        background: none;
+    }
+    input[type="checkbox"]:checked ~ nav {
+        position: fixed;
+        right: 0;
+        /* left: 25.1%; */
+    }
+
+    input[type="checkbox"]:checked ~ #back {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    #hopen span {
+        display: none;
+    }
+
+    #hopen {
+        /* width: 22vw;
+        height: auto; */
+        padding: 12%;
+        position: absolute;
+        top: 0.3rem;
+        right: 0.1rem;
+        z-index: 10;
+        /* width: 25%;
+        height: 26%; */
+        background: url(../images/button_menu_open.png)no-repeat;
+        background-size: 100% auto;
+    }
+
+    input[type="checkbox"]:checked + #hopen span {
+        visibility: hidden;
+    }
+
+    input[type="checkbox"]:checked + #hopen {
+        position: fixed;
+        background: url(../images/button_menu_close.png)no-repeat;
+        background-size: 100% auto;
+    }
+
+    /* カレント設定 */
+
+    #about nav .nav1 a {
+        background: url(../images/sp_nav1_c.png)no-repeat left 30%;;
+        background-size: 30px auto;
+    }
+    #news nav .nav2 a {
+        background: url(../images/sp_nav2_c.png)no-repeat left 30%;;
+        background-size: 30px auto;
+    }
+    #products nav .nav3 a {
+        background: url(../images/sp_nav3_c.png)no-repeat left 30%;;
+        background-size: 30px auto;
+    }
+    #tour nav .nav4 a {
+        background: url(../images/sp_nav4_c.png)no-repeat left 30%;;
+        background-size: 30px auto;
+    }
+    #contact nav .nav5 a {
+        background: url(../images/sp_nav5_c.png)no-repeat left 30%;;
+        background-size: 30px auto;
+    }
+
+    /* フッター------------------------------------------- */
+    
+    .footerMainWrap {
+        display: block;
+        margin: 0 20px;
+	}
+    .footerAccess ul li img{
+        width: 100%;
+    }
+    .footerGmap {
+        margin-bottom: 20px;
+    }
+    .footerFooter{
+        font-size: 0.75rem;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .footerFooter ul{
+        width: 200px;
+        flex-flow:row wrap;
+    }
+    .footerFooter ul li:nth-child(4)::before {
+        content: none;
+    }
+    .footerFooter ul li:nth-child(3){
+        margin-bottom: 5px;
+    }
+    .move-page-top {
+        right: 10px;
+    }
+    
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+* {
+	box-sizing: border-box;
+}
+
+/*form {
+	padding: 20px;
+}*/
+
+.formItem {
+	display: flex;
+	margin-bottom: 3.5%;
+	align-items: center;
+} 
+.formItem dt {/*widthを30％にしてお問い合わせの部分なおしました*/
+	width: 300px;
+	margin: 1% 1em 1% 0;
+	font-weight: bold;
+}
+
+.formItem dd {
+	/*background: coral;*/
+	width: 100%;
+}
+input[type="text"] {
+	border: 1px solid #000;
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+	border: 1px solid #000;
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+}
+.contactMain {
+	margin: 0 5.5%;
+}
+.contactMain p {
+	margin-bottom: 3.5%;
+}
+.contactMain ul {
+	margin-bottom: 7%;
+}
+.contactMain ul li::before {
+	content: "●";
+}
+.contactMain ul li {
+	line-height: 1.5;/*共通事項なので変更の可能性あり*/
+}
+
+dl dt::before {
+	content:'必須';
+	background: #c9171e;
+	padding: 3px 5px;
+	margin-right: 0.5em;
+	color: #fff;
+	border-radius: 3px;
+}
+
+dl .tel::before {
+	content:'任意';
+	background: #ccc;
+	padding: 3px 5px;
+	margin-right: 0.5em;
+	color: #fff;
+	border-radius: 3px;
+}
+
+dl dt dd {
+	width: 100%;
+}
+.messageContact {
+	background: #fff;
+	border: solid #000 1px;
+	padding: 3% 6%; 
+	margin: 7% auto;
+}
+.messageContact span{
+	color: #c9171e;
+}
+.messageContact .contactButton{
+	background: #c9171e;
+	color: #fff;
+} 
+
+.checkbox {
+	text-align: center;
+}
+
+label span{
+	font-size: 0.75rem;
+}
+
+label span::before{
+	content: ' ';
+}
+
+.contactButton {
+	display: block;
+	background: #ccc;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	width: 30%;
+	padding: 12px auto; 
+	font-size: 1.25rem;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	margin: 7% auto 4%;
+  }
+  
+
+@media screen and (max-width:599px) {
+
+	.formItem {
+		display: block;
+	}
+	.contactMain {
+		margin: 0 auto;
+	}
+}

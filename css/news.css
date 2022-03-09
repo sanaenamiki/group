@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.opening {
+    padding: 0 5.5% 3.5% 5.5%;
+}
+
+#newsWrap {
+    background: #fff;
+    margin: 0 5.5% 0 5.5%;
+    padding: 3.5% 6.4% 3.5% 6.4%;
+    border-radius: 10px;
+}
+
+#newsWrap div {
+    border-bottom: 1px dotted #c9171e;
+    width: 100%;
+}
+
+#newsWrap div + div {
+    padding-top: 1%;
+}
+
+#newsWrap dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+}
+
+#newsWrap dl dt {
+    color: #c9171e;
+    font-weight: bold;
+    margin-right: 5%;
+    /* padding-right: 1.5rem; */
+    width: 15%;
+}
+
+#newsWrap dl dd {
+    letter-spacing: 0.05em;
+    width: 80%;
+}
+
+
+/* スマホ対応----------------------------------- */
+@media screen and (max-width:599px) {
+    #newsWrap dl {
+        display: block;
+    }
+
+    #newsWrap dl dd {
+        letter-spacing: 0.05em;
+        width: 100%;
+    }
+    #newsWrap  {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .opening {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
